@@ -1,4 +1,4 @@
-let tasks = [];
+let tasks = []; 
 
 function fetchTasks() {
     const taskList = document.getElementById('taskList');
@@ -19,9 +19,9 @@ function addTask() {
     }
 
     tasks.push(newTask);
-    localStorage.setItem('tasks', JSON.stringify(tasks));
     taskInput.value = '';
     fetchTasks();
 }
 
-fetchTasks();
+document.addEventListener('DOMContentLoaded', fetchTasks);
+
