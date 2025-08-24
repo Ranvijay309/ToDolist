@@ -1,4 +1,4 @@
-let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+let tasks = [];
 
 function fetchTasks() {
     const taskList = document.getElementById('taskList');
